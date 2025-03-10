@@ -1,1 +1,32 @@
+Azure Data Factory (ADF) pipeline:
+✅ Lookup Activity (fetch last processed load)
+✅ Copy Data Activity (fetch new data & write to destination)
+✅ Stored Procedure Activity (update watermark table)
+✅ Connections between each activity
 
+
+ADF Linked Services Setup:
+✅ Azure SQL Database
+✅ Azure Data Lake Storage (ADLS Gen2)
+✅ Any other connections used (GitHub)
+
+
+PySpark transformations within Databricks Notebooks
+✅ Reading from Bronze Layer (raw data)
+✅ Transforming and cleaning data (Silver Layer)
+✅ Writing processed data to Gold Layer
+
+
+
+Incremental Load - incremental loading is implemented using Lookup Activity in ADF
+✅ Lookup Activity retrieving last processed Date_ID
+✅ Query showing new records based on the watermark table
+✅ Copy Data Activity moving only new data
+
+
+
+
+SCD Type 2 Query Results
+✅ Historical tracking (old records remain, new records added with new version)
+✅ Surrogate key changes
+✅ Effective date & expiry date
